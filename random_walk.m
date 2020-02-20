@@ -11,17 +11,11 @@
 %%
 
 n=30; %number of steps in a random walk
-num_iter = 1e3; %number of iterations for averaging results
-moves = [0 1; 0 -1; -1 0; 1 0]; %2-D moves
-
+num_ite
 %random walk statistics
 square_dist = zeros(num_iter,1); weights = zeros(num_iter,1);
 
-for iter=1:num_iter  
-    trial = 0; i=1;
-    %iterate until we have a non-crossing random walk
-    while (i~=n) 
-    
+
         %init
         X=0; Y=0; weight = 1;
         lattice = zeros(2*n+1, 2*n+1);
