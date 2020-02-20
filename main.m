@@ -1,9 +1,4 @@
-kamali
-%%
-idiot
-clear all 
-clc
-close all
+
 %%
 for ki=1:30
 SearchAgents_no=30; % Number of search agents
